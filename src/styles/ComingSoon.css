@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap');
+
+
+
+
+.vw-coming-container {
+  color: var(--color-text-primary);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+/* LOGO */
+.vw-logo {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: var(--font-heading);
+  background: var(--gradient-vwa);
+-webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TITLE */
+.vw-title {
+  font-size: 32px;
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.vw-gradient {
+  background: var(--gradient-vwa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTEXT */
+.vw-subtitle {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  /* margin-bottom: 40px; */
+}
+
+/* CONTACT BOX */
+.vw-contact-box {
+  background: var(--color-bg-card);
+  padding: 20px 30px;
+  border-radius: 16px;
+  border: 1px solid var(--color-bg-separator);
+  margin-bottom: 35px;
+  animation: fadeUp 1.4s ease;
+}
+
+.vw-contact-text {
+  color: var(--color-text-tertiary);
+  margin-bottom: 8px;
+}
+
+.vw-mail {
+  color: var(--color-primary-light);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CTA */
+.vw-cta {
+  background: var(--gradient-vwa);
+  padding: 14px 26px;
+  border-radius: 50px;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.vw-cta:hover {
+  transform: scale(1.07);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .vw-title {
+    font-size: 26px;
+  }
+  
+  .vw-logo {
+    font-size: 52px;
+  }
+
+  .vw-subtitle {
+    font-size: 16px;
+  }
+}

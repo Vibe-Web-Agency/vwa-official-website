@@ -1,22 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import Services from './components/Services.jsx';
-import Why from './components/Why.jsx';
-import CTA from './components/CTA.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
+import ComingSoon from './pages/ComingSoon.jsx';
+import Home from './pages/Home.jsx';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <Services/>
-    <Why/>
-    <CTA/>
-    <Contact/>
-    <Footer/>
+    {/* <Home/> */}
+    <ComingSoon />
     </>
   );
 }
