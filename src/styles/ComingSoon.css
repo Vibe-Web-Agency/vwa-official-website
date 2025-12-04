@@ -17,15 +17,9 @@
 
 /* LOGO */
 .vw-logo {
-  font-size: 64px;
-  font-weight: 900;
-  margin-bottom: 10px;
+  width: 100px;
+  height: auto;
   margin-top: 0;
-  font-family: var(--font-heading);
-  background: var(--gradient-vwa);
--webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* TITLE */
@@ -89,6 +83,61 @@
   transform: scale(1.07);
 }
 
+
+
+
+/* COUNTDOWN */
+.vw-countdown {
+  margin-top: 30px;
+  text-align: center;
+  animation: fadeUp 1.4s ease;
+}
+
+.vw-countdown-title {
+  font-size: 18px;
+  color: var(--color-text-tertiary);
+  margin-bottom: 15px;
+}
+
+.vw-countdown-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 40px;
+  padding: 12px 28px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-bg-separator);
+  gap: 25px;
+}
+
+.vw-countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1.8s ease;
+}
+
+.vw-count-number {
+  font-size: 34px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  background: var(--gradient-vibe); /* gradient VWA */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+.vw-count-label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 0.6px;
+}
+
+
+
 /* ANIMATIONS */
 @keyframes fadeIn {
   from {opacity: 0;}
@@ -108,15 +157,30 @@
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
+  /* TEXT */
   .vw-title {
     font-size: 26px;
   }
-  
+
   .vw-logo {
     font-size: 52px;
   }
 
   .vw-subtitle {
     font-size: 16px;
+  }
+
+  /* COUNTDOWN */
+  .vw-count-number {
+    font-size: 26px;
+  }
+
+  .vw-count-label {
+    font-size: 11px;
+  }
+
+  .vw-countdown-grid {
+    gap: 18px;
+    padding: 10px 20px;
   }
 }
